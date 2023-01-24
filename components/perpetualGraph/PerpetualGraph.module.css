@@ -1,0 +1,49 @@
+.canvas{
+  background: #171923;
+  box-sizing: border-box;
+}
+
+.scene{
+  width:600px;
+  height:400px;
+}
+
+.selector{
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: #1A202C;
+  overflow: hidden;
+  height: 4rem;
+  padding-inline: 0.7rem;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+  border-radius: 1rem;
+}
+
+.selector button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  min-width: 100px;
+  margin-inline: 0.5rem;
+  border: 0px;
+  border-radius: 1rem;
+  background-color: #2d3748;
+  color: white;
+}
+
+.selector button:hover {
+  background-color: #4A5568;
+  cursor: pointer;
+}
+
+.selector button:active {
+  background-color: #718096;
+}
+
+.selector div {
+  display: flex;
+  overflow: hidden;
+}

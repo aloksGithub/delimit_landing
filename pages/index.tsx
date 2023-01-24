@@ -44,7 +44,7 @@ export default function Home() {
           <h5>Users</h5>
         </div>
       </div>
-      <div className={styles.features}>
+      {/* <div className={styles.features}>
         <div>
           <div className={styles.feature}>
             <h2>Limit Orders</h2>
@@ -75,8 +75,8 @@ export default function Home() {
           </div>
           <div className={styles.universalSwapImage}></div>
         </div>
-      </div>
-      <div className={styles.integrations}>
+      </div> */}
+      {/* <div className={styles.integrations}>
         <h2>Integrations</h2>
         <div>
           <div>
@@ -104,7 +104,7 @@ export default function Home() {
             <h4>Venus</h4>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
