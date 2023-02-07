@@ -25,7 +25,7 @@ export const Navbar = () => {
     <div>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          Delimit
+          <Link href={"/"}>Delimit</Link>
         </div>
         <button onClick={()=>setDisplayMenu(!displayMenu)} className={styles.menuSmall}>Menu</button>
         <div className={styles.menuBig}>

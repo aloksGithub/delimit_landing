@@ -28,55 +28,49 @@ export default function Home() {
       </div>
       <div className={styles.stats}>
         <div>
-          <h3>$1.00</h3>
+          <h3>$0.00</h3>
           <h5>DLMT Price</h5>
         </div>
         <div>
-          <h3>$159M</h3>
+          <h3>$0.00</h3>
           <h5>TVL</h5>
         </div>
         <div>
-          <h3>2.3B</h3>
+          <h3>$0.00</h3>
           <h5>Volume</h5>
         </div>
         <div>
-          <h3>7,831</h3>
+          <h3>0</h3>
           <h5>Users</h5>
         </div>
       </div>
-      {/* <div className={styles.features}>
+      <div className={styles.features}>
         <div>
           <div className={styles.feature}>
             <h2>Limit Orders</h2>
             <p>
-              <ul>
-                <li>
-                  Create multiple limit orders for deposited assets
-                </li>
-                <li>
-                  Harvest and reinvest rewards from staked assets
-                </li>
-              </ul>
+              Create multiple limit orders for deposited assets
+            </p>
+            <p>
+              Harvest and reinvest rewards from staked assets
             </p>
           </div>
           <div className={styles.limitOrderImage}></div>
         </div>
         <div>
+          <div className={styles.universalSwapImage}></div>
           <div className={styles.feature}>
             <h2>Universal Swap</h2>
-            <ul>
-              <li>
+              <p>
                 Swap multiple ERC20/ERC721 tokens in a single transaction
-              </li>
-              <li>
+              </p>
+              <p>
                 Swap liquidity pool and lending pool tokens
-              </li>
-            </ul>
+              </p>
           </div>
-          <div className={styles.universalSwapImage}></div>
         </div>
-      </div> */}
-      {/* <div className={styles.integrations}>
+      </div>
+      <div className={styles.integrations}>
         <h2>Integrations</h2>
         <div>
           <div>
@@ -104,7 +98,7 @@ export default function Home() {
             <h4>Venus</h4>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

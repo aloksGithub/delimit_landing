@@ -27,16 +27,17 @@
 
 .title {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: flex-end;
   align-items: center;
-  height: 65vh;
   margin-bottom: 40px;
+  margin-top: 3rem;
 }
 .cta {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 3rem;
 }
 
 .title button {
@@ -47,10 +48,20 @@
   max-width: 400px;
 }
 
+.titleImage {
+  margin-bottom: 70px;
+  margin-top: 5rem;
+  display: none;
+}
+
 .features > div {
   margin-block: 15rem;
   display: flex;
   flex-direction: column;
+}
+
+.features>div:nth-child(2) {
+  flex-direction: column-reverse;
 }
 
 .limit-order-image {
@@ -59,6 +70,10 @@
 
 .universal-swap-image {
   display: none;
+}
+
+.integrations {
+  padding-bottom: 3rem;
 }
 
 .integrations > div {
@@ -113,7 +128,6 @@
   }
 
   .limitOrderImage {
-    margin: 2rem;
     display: flex;
     justify-content: center;
     background-color: #1A202C;
@@ -122,16 +136,19 @@
   }
 
   .universalSwapImage {
-    margin: 2rem;
     display: flex;
     justify-content: center;
     background-color: #1A202C;
     width: 60%;
     height: 400px;
   }
+
+  .titleImage {
+    display: block;
+  }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .title {
     flex-direction: row;
     justify-content: center;
@@ -145,7 +162,6 @@
     margin-left: 1rem;
     display: flex;
     width: 600px;
-    height: 400px;
   }
 
   .stats {
@@ -160,7 +176,19 @@
     width: 40%;
   }
 
+  .limitOrderImage {
+    margin-left: 2rem;
+  }
+
+  .universalSwapImage {
+    margin-right: 2rem;
+  }
+
   .features > div {
+    flex-direction: row;
+  }
+
+  .features>div:nth-child(2) {
     flex-direction: row;
   }
 }
