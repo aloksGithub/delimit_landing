@@ -1,6 +1,8 @@
 import styles from "./Navbar.module.css"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import {GiHamburgerMenu} from 'react-icons/gi'
+import {RxCross2} from 'react-icons/rx'
 
 export const Navbar = () => {
   const [displayMenu, setDisplayMenu] = useState(false)
@@ -24,15 +26,21 @@ export const Navbar = () => {
   return (
     <div>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link href={"/"}>Delimit</Link>
-        </div>
-        <button onClick={()=>setDisplayMenu(!displayMenu)} className={styles.menuSmall}>Menu</button>
-        <div className={styles.menuBig}>
-          <Link href={"/#"}>About Us</Link>
-          <Link href={"/#"}>Docs</Link>
-          <Link href={"/#"}>Github</Link>
-          <Link href={"/#"}>Roadmap</Link>
+        <div>
+          <div className={styles.logo}>
+            <Link href={"/"}>Delimit</Link>
+          </div>
+          <button onClick={()=>setDisplayMenu(!displayMenu)} className={styles.menuSmall}>
+            {
+              displayMenu?<RxCross2></RxCross2>:<GiHamburgerMenu></GiHamburgerMenu>
+            }
+          </button>
+          <div className={styles.menuBig}>
+            <Link href={"/#"}>About Us</Link>
+            <Link href={"/#"}>Docs</Link>
+            <Link href={"/#"}>Github</Link>
+            <Link href={"/#"}>Roadmap</Link>
+          </div>
         </div>
         <div id={styles.menu}>
           <Link href={"/#"}>About Us</Link>

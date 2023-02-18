@@ -1,11 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-inline: 2rem;
-  padding-block: 2rem;
-  height: 3rem;
-  background-color: #13151d;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -20,6 +16,18 @@
 
 .navbar button {
   margin-inline: 5px;
+}
+
+.navbar>div:first-child {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  height: 3rem;
+  background-color: #13151d;
 }
 
 .logo {
@@ -48,24 +56,52 @@
   background-color: #2d3748;
 }
 
+.menuSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  background-color: #13151d;
+  border: 0px;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.menuSmall:hover {
+  background-color: #1a202c;
+  cursor: pointer;
+}
+
+.menuSmall:active {
+  background-color: #2d3748;
+  cursor: pointer;
+}
+
 #menu {
   --display: none;
-  --move: 50%;
+  --move: 100%;
   transform: translate(var(--move));
   display: var(--display);
   transition: transform 0.2s;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(29, 18, 126);
+  background-color: #13151d;
 }
 
 #menu > a {
   padding: 1rem;
-  background-color: rgb(29, 18, 126);
+  background-color: #13151d;
 }
 
 #menu > a:hover {
-  background-color: rgb(27, 30, 187);
+  background-color: #1a202c;
+  cursor: pointer;
+}
+
+#menu > a:active {
+  background-color: #2d3748;
   cursor: pointer;
 }
 
